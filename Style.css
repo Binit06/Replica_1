@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    height: 87%;
+}
+.Content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 87%;
+    background: rgba(0,0,0,0.94)
+}
+.logo{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.NavContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: 22%;
+    top: 20%;
+    padding: 5px;
+    /* border: 2px solid white; */
+    justify-content: space-between;
+}
+.Home{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    color: white;
+    align-items: center;
+    font-size: 17px;
+    background: rgba(122, 119, 119, 0);
+    padding: 2px;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius: 5px;
+    z-index: 2;
+    padding-left: 12px;
+    font-family: Inter;
+    font-weight: 800;
+}
+.Home:hover{
+    background: rgba(122, 119, 119, 0.4);
+}
+.container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    align-items: center;
+}
+.Search{
+    display: flex;
+    width: 95%;
+    height: 25%;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 17px;
+    padding-left: 12px;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 800;
+}
+.Search:hover{
+    background: rgba(122, 119, 119, 0.4);
+}
+.Library{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    color: white;
+    align-items: center;
+    /* background: rgba(122, 119, 119, 0.6); */
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 17px;
+    padding-left: 12px;
+    font-family: Inter;
+    font-weight: 800;    
+}
+.Library:hover{
+    background: rgba(122, 119, 119, 0.4);
+}
+
+.otherContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    top: 30%;
+    padding: 5px;
+    /* border: 2px solid white; */
+    justify-content: space-between;
+}
+.CreatePlaylist{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    color: white;
+    align-items: center;
+    /* background: rgba(122, 119, 119, 0.6); */
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 800;    
+}
+.likedSongs{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    color: white;
+    align-items: center;
+    /* background: rgba(122, 119, 119, 0.6); */
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 800;    
+}
+.Episodes{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    color: white;
+    align-items: center;
+    /* background: rgba(122, 119, 119, 0.6); */
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 17px;
+    font-family: Inter;
+    font-weight: 800;    
+}
+
+.InstallApp{
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    bottom: 1%;
+    font-size: 23px;
+    padding: 2px;
+    left: 3%;
+    color: wheat;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 10%;
+    align-items: center;
+}
+.LeftButton{
+    position: absolute;
+    height: 100%;
+    width: 8%;
+    left: 0px;
+    /* background-color: #fff; */
+}
+.RightButton{
+    position: absolute;
+    height: 100%;
+    width: 8%;
+    left: 6%;
+    /* background-color: #fff; */
+}
+.SearchContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 14%;
+    width: 40%;
+    height: 65%;
+    margin-left: 10px;
+    background-color: rgb(255,255,255);
+    border-radius: 25px;
+}
+.SearchText{
+    margin-left: 3%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: Inter;
+    font-weight: 600;
+    opacity: 0.7;
+}
+.SearchIcon{
+    width: 5%;
+    height: 100%;
+    margin-left: 15px;
+}
+.Genres{
+    position: relative;
+    top: 1%;
+    width: 100%;
+    height: 35%;
+}
+.GenreText{
+    font-size: 27px;
+    color: rgba(255,255,255,1);
+    margin-left: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-weight: 800;
+}
+.GenreContainer{
+    display: flex;
+    flex-direction: row;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.GenreContainer::-webkit-scrollbar {
+    width: 0; /* This hides the vertical scrollbar */
+    height: 0; /* This hides the horizontal scrollbar */
+}
+.GenreList{
+    width: 400px;
+    height: 95%;
+    border-radius: 10px;
+    /* background-color: #fff; */
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 33px;
+    color: white;
+    font-family: Inter;
+    font-weight: bolder;
+}
+.GenreList:first-child{
+    background-color: rgb(170, 116, 207);
+}
+.GenreList:nth-child(2){
+    background-color: rgb(149, 103, 29);
+}
+.GenreList:nth-child(3){
+    background-color: rgb(105, 117, 176);
+}
+/*
+.GenreList:last-child{
+    background-color: rgb(159, 81, 211);
+} */
+.AllSongs{
+    position: relative;
+    top: 12%;
+    width: 100%;
+    height: 38%;
+}
+.SongText{
+    font-size: 27px;
+    color: rgba(255,255,255,1);
+    margin-left: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-weight: 800;
+}
+.SongsContainer {
+    /* display: flex;
+    flex-direction: row; */
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; /* Add horizontal scroll if content exceeds width */
+}
+.SongsContainer::-webkit-scrollbar {
+    width: 0; /* This hides the vertical scrollbar */
+    height: 0; /* This hides the horizontal scrollbar */
+}
+
+.Songs {
+    /* position: absolute; Comment this line */
+    width: 190px;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: Inter;
+    font-weight: bolder;
+}
+
+.Songs:first-child {
+    left: 0; /* Comment this line */
+    background-color: rgb(64, 176, 112);
+}
+
+.Songs:nth-child(2) {
+    left: 25%; /* Comment this line */
+    background-color: rgb(35, 65, 134);
+}
+
+.Songs:nth-child(3) {
+    left: 50%; /* Comment this line */
+    background-color: rgb(93, 47, 158);
+}
+
+.Songs:nth-child(4) {
+    left: 75%; /* Comment this line */
+    background-color: rgb(205, 106, 195);
+}
+
+.Songs:nth-child(5) {
+    left: 100%; /* Comment this line */
+    background-color: rgb(158, 158, 201);
+}
+.PlaySlides{
+    position: absolute;
+    width: 100%;
+    height: 12.9%;
+    bottom: 0;
+    background: rgba(0,0,0,0.93)
+}
