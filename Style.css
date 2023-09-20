@@ -3,6 +3,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .NavBar{
@@ -36,6 +37,8 @@ body{
     padding: 5px;
     /* border: 2px solid white; */
     justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
 }
 .Home{
     display: flex;
@@ -55,6 +58,9 @@ body{
     font-weight: 800;
 }
 .Home:hover{
+    background: rgba(122, 119, 119, 0.4);
+}
+.Home:focus{
     background: rgba(122, 119, 119, 0.4);
 }
 .container{
@@ -110,6 +116,8 @@ body{
     padding: 5px;
     /* border: 2px solid white; */
     justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
 }
 .CreatePlaylist{
     display: flex;
@@ -256,13 +264,6 @@ body{
 .GenreList:nth-child(2){
     background-color: rgb(149, 103, 29);
 }
-.GenreList:nth-child(3){
-    background-color: rgb(105, 117, 176);
-}
-/*
-.GenreList:last-child{
-    background-color: rgb(159, 81, 211);
-} */
 .AllSongs{
     position: relative;
     top: 12%;
